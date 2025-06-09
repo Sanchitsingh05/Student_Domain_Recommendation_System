@@ -4,6 +4,21 @@ import base64
 import os
 
 st.set_page_config(page_title="Student Domain Recommender", layout="wide")
+import os
+import gdown
+
+MODEL_FILE_ID = "1v3W1ufNHd0sWckzv8KRHqYErGwWnp-cr"
+DATA_FILE_ID = "1MmoIka-RuexdLcTSpC3b6Fx-d2j2o9vk"
+
+# Download model if not exists
+if not os.path.exists("model1.pkl"):
+    model_url = f"https://drive.google.com/uc?id={MODEL_FILE_ID}"
+    gdown.download(model_url, "model1.pkl", quiet=False)
+
+# Download dataset if not exists
+if not os.path.exists("your_dataset.csv"):  # replace with your file name
+    data_url = f"https://drive.google.com/uc?id={DATA_FILE_ID}"
+    gdown.download(data_url, "your_dataset.csv", quiet=False)
 
 
 def add_bg(image_file):
