@@ -144,7 +144,7 @@ def main():
             st.error(f"Error during prediction: {e}")
 
     if st.button("About"):
-        st.info("Created by Prince, Kaustubh, Pavani, Moitryee, and Snehal.")
+        st.info("Created by Sanchit")
 
 if __name__ == "__main__":
     main()
