@@ -1,6 +1,7 @@
 streamlit
 scikit-learn
 pandas
+gdown
+numpy
 matplotlib
 Pillow
-gdown
