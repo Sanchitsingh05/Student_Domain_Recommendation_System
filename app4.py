@@ -16,7 +16,7 @@ if not os.path.exists("model1.pkl"):
     gdown.download(model_url, "model1.pkl", quiet=False)
 
 # Download dataset if not exists
-if not os.path.exists("your_dataset.csv"):  # replace with your file name
+if not os.path.exists("studentplacementdata.csv"):  # replace with your file name
     data_url = f"https://drive.google.com/uc?id={DATA_FILE_ID}"
     gdown.download(data_url, "your_dataset.csv", quiet=False)
 
